@@ -1,3 +1,7 @@
 body {
-    background-color: blue;
+    background-color: red;
+}
+
+.barra-navegacao {
+    font-size: 130px;
 }
