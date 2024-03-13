@@ -10,4 +10,5 @@ admin.site.register(ItemEstoque)
 admin.site.register(Endereco)
 admin.site.register(Pedido)
 admin.site.register(ItensPedido)
+admin.site.register(Banner)
 
