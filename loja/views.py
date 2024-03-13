@@ -3,10 +3,12 @@ from .models import *
 
 # Create your views here.
 def homepage(request):
-    return render(request,'homepage.html')
+    banners = Banner.objects.filter(ativo=True)
+    context = {"banners": banners}
+    return render(request,'homepage.html', context)
 
 def loja(request):
-    produtos = Produto.objects.all() 
+    produtos = Produto.objects.filter(ativo=True) 
     context = {"produtos": produtos}
     return render(request,'loja.html', context)
 
